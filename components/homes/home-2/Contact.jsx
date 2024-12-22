@@ -18,8 +18,10 @@ export default function Contact({ heading }) {
           </h2>
           <p className="section-text mb-60 mb-md-40 mb-sm-30">
             <span className="section-title-inline">How?</span> Have a question?
-            Just drop me a line via email or make a WhatsApp call. I am
-            available for new projects and interesting ideas.
+            Just drop me a line via email or make a WhatsApp call. Whether it’s
+            about chess, art, entrepreneurship, or something entirely new, I’d
+            love to hear from you. Reach out and let’s create something
+            remarkable!
           </p>
           <div>
             <a
@@ -27,7 +29,7 @@ export default function Contact({ heading }) {
               className="link-hover-anim align-middle"
               data-link-animate="y"
             >
-              ibthemes21@gmail.com
+              abimbolaosunfuyi@gmail.com
             </a>
           </div>
           <div>
@@ -36,7 +38,7 @@ export default function Contact({ heading }) {
               className="link-hover-anim align-middle"
               data-link-animate="y"
             >
-              +1 837 652 8800
+              +234 814 814 6620
             </a>
           </div>
         </div>

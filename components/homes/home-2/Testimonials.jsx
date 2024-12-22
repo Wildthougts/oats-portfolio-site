@@ -41,8 +41,9 @@ export default function Testimonials() {
                         />
                       </div>
                       <p>
-                        Beautifull template, nice code and easy to customize.
-                        Optimization and structure are very good for seo basics.
+                        Working with Abimbola has been a game-changer for me.
+                        His attention to detail and personalized feedback have
+                        helped me reach new milestones in my chess journey. .
                       </p>
                       <footer className="ts2-author mt-50 mt-xs-30 clearfix">
                         <div className="ts2-author-img float-start">

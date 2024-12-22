@@ -1,25 +1,25 @@
 export const faqs = [
   {
     id: 1,
-    question: "01. Discussion",
+    question: "01. Chess Coaching",
     answer:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.",
   },
   {
     id: 2,
-    question: "02. Design",
+    question: "02. Project Management",
     answer:
       "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet dignissim pellentesque felis.",
   },
   {
     id: 3,
-    question: "03. Development",
+    question: "03. Book Club",
     answer:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.",
   },
   {
     id: 4,
-    question: "04. Production",
+    question: "04. The Process",
     answer:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.",
   },

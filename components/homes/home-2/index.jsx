@@ -43,9 +43,8 @@ export default function Home2({ onePage = false, dark = false }) {
                   <span className="text-outline">About</span>
                 </h2>
                 <p className="section-text mb-60 mb-md-40 mb-sm-30">
-                  <span className="section-title-inline">Who?</span> I’m
-                  Abimbola Osunfuyi—passionately known as Oats. I’m a chess
-                  enthusiast, avid reader, and entrepreneur who finds
+                  <span className="section-title-inline">Who?</span> I’m a Fide
+                  chess Master, avid reader, and entrepreneur who finds
                   inspiration in art and strategy. My life revolves around
                   mastering the game of chess, exploring the limitless worlds
                   within books, and creating ventures that merge creativity with
@@ -129,9 +128,10 @@ export default function Home2({ onePage = false, dark = false }) {
                 <span className="text-outline">Services</span>
               </h2>
               <p className="section-text mb-60 mb-md-40 mb-sm-30">
-                <span className="section-title-inline">Why?</span> I use the
-                power of design to solve complex problems and cultivate business
-                solutions.
+                <span className="section-title-inline">Why?</span> As a FIDE
+                Chess Master with years of competitive experience, I am
+                passionate about helping players at all levels unlock their full
+                potential in chess
               </p>
               <div className="local-scroll">
                 {onePage ? (
@@ -198,17 +198,17 @@ export default function Home2({ onePage = false, dark = false }) {
       <hr
         className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}
       />
-      <section
+      {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
         } `}
         id="portfolio"
       >
         <Portfolio />
-      </section>
-      <hr
+      </section> */}
+      {/* <hr
         className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}
-      />
+      /> */}
       <section
         className={`page-section  ${dark ? "bg-dark-1 light-content" : ""} `}
       >

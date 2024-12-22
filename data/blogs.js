@@ -35,22 +35,24 @@ export const blogs2 = [
   {
     id: 4,
     imgSrc: "/assets/images/demo-modern/blog/1.jpg",
-    title: "Natura Insects Series: Crafting Insects Made by Flowers",
-    date: "December 3, 2023",
+    title:
+      "From Puzzles to Possibilities: How Chess Inspires My Passion for Art and Business",
+    date: "January 3, 2025",
     rellaxSpeed: -1,
     rellaxPercentage: 0.37,
   },
   {
     id: 5,
     imgSrc: "/assets/images/demo-modern/blog/2.jpg",
-    title: "Minimalistic Design Concept for Balmain Online Store",
-    date: "December 2, 2023",
+    title: "Chess as a Mirror: Life Lessons Learned One Move at a Time",
+    date: "January 6, 2023",
   },
   {
     id: 6,
     imgSrc: "/assets/images/demo-modern/blog/3.jpg",
-    title: "Spotlight — Equinox Collection by Shane Griffin",
-    date: "November 29, 2023",
+    title:
+      "Mastering the Endgame: How Chess Shapes Strategic Thinking in Business and Beyond",
+    date: "November 29, 2025",
     rellaxSpeed: 1,
     rellaxPercentage: 0.37,
   },

@@ -13,9 +13,8 @@ export default function Blog() {
             <span className="text-outline">Latest News</span>
           </h2>
           <p className="section-text mb-60 mb-md-40 mb-sm-30">
-            <span className="section-title-inline">Where?</span> Check the
-            latest news about our company in our blog. Discover the methods
-            of&nbsp;creativity and technology.
+            <span className="section-title-inline">Where?</span> Explore my
+            weekly thoughts and insights. Get inspired and discover new ideas.
           </p>
           <div className="local-scroll">
             <Link

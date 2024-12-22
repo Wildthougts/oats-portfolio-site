@@ -17,7 +17,7 @@ export default function Footer2() {
         <div className="row">
           {/* Copyright */}
           <div className="col-lg-3 text-center text-lg-start mb-md-50">
-            © IB-Themes {new Date().getFullYear()}.
+            © oats {new Date().getFullYear()}.
           </div>
           {/* End Copyright */}
           {/* Social Links */}
@@ -57,7 +57,7 @@ export default function Footer2() {
       </div>
       {/* Footer Text */}
       <div className="footer-text text-center mt-n10 pb-50">
-        Made with love for great people.
+        Made with love by <a href="http://instagram.com/destinyomaye">Deon</a>.
         <div className="small">
           Read <a href="#">Terms &amp; Conditions</a> and{" "}
           <a href="#">Privacy Policy</a>.
