@@ -7,8 +7,9 @@ import Hero2 from "@/components/homes/home-2/heros/Hero2";
 import { boldOnepage } from "@/data/menu";
 
 export const metadata = {
-  title: "Oats Portfolio - Demo 2",
-  description: "A mobile-friendly, modern, and stylish portfolio template",
+  title: "Oats | Chess, Creativity, and Entrepreneurship",
+  description:
+    "Discover the world of Abimbola Osunfuyi, a chess enthusiast, creative entrepreneur, and lover of art and books. ",
 };
 export default function Home2TypedTextOnepage() {
   return (
