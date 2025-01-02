@@ -55,52 +55,7 @@ export default function Content1() {
         </div>
       </div>
       {/* End Post */}
-      {/* Post */}
-      <div className="blog-item box-shadow round p-4 p-md-5">
-        {/* Post Title */}
-        <h2 className="blog-item-title">
-          <Link href={`/main-blog-single-sidebar-right/${2}`}>
-            Blog post with blockquote
-          </Link>
-        </h2>
-        {/* Author, Categories, Comments */}
-        <div className="blog-item-data">
-          <a href="#">
-            <i className="mi-clock size-16" /> December 25
-          </a>
-          <span className="separator">&nbsp;</span>
-          <a href="#">
-            <i className="mi-user size-16" /> John Doe
-          </a>
-          <span className="separator">&nbsp;</span>
-          <i className="mi-folder size-16" />
-          <a href="#">Design</a>, <a href="#">Branding</a>
-          <span className="separator">&nbsp;</span>
-          <a href="#">
-            <i className="mi-message size-16" /> 5 Comments
-          </a>
-        </div>
-        {/* Blockquote */}
-        <blockquote className="blog-item-q mb-30">
-          <p className="mb-0">
-            <Link href={`/main-blog-single-sidebar-right/${1}`}>
-              Curabitur iaculis, ligula facilisis volutpat suscipit, sapien
-              felis tempor, consequat vitae velit.
-            </Link>
-          </p>
-        </blockquote>
-        {/* End Blockquote */}
-        {/* Read More Link */}
-        <div className="blog-item-foot">
-          <Link
-            href={`/main-blog-single-sidebar-right/${1}`}
-            className="btn btn-mod btn-round btn-medium btn-gray"
-          >
-            Read More
-          </Link>
-        </div>
-      </div>
-      {/* End Post */}
+
       {/* Post */}
       <div className="blog-item box-shadow round p-4 p-md-5">
         {/* Post Title */}
@@ -154,51 +109,7 @@ export default function Content1() {
         </div>
       </div>
       {/* End Post */}
-      {/* Post */}
-      <div className="blog-item box-shadow round p-4 p-md-5">
-        {/* Post Title */}
-        <h2 className="blog-item-title">
-          <Link href={`/main-blog-single-sidebar-right/${1}`}>
-            Blog post with text
-          </Link>
-        </h2>
-        {/* Author, Categories, Comments */}
-        <div className="blog-item-data">
-          <a href="#">
-            <i className="mi-clock size-16" /> December 25
-          </a>
-          <span className="separator">&nbsp;</span>
-          <a href="#">
-            <i className="mi-user size-16" /> John Doe
-          </a>
-          <span className="separator">&nbsp;</span>
-          <i className="mi-folder size-16" />
-          <a href="#">Design</a>, <a href="#">Branding</a>
-          <span className="separator">&nbsp;</span>
-          <a href="#">
-            <i className="mi-message size-16" /> 5 Comments
-          </a>
-        </div>
-        {/* Text Intro */}
-        <div className="mb-30">
-          <p className="mb-0">
-            Suspendisse accumsan interdum tellus, eu imperdiet lacus consectetur
-            sed. Aliquam in ligula ac lacus blandit commodo vel luctus quam.
-            Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas. Cras eu ultrices mauris.
-          </p>
-        </div>
-        {/* Read More Link */}
-        <div className="blog-item-foot">
-          <Link
-            href={`/main-blog-single-sidebar-right/${1}`}
-            className="btn btn-mod btn-round btn-medium btn-gray"
-          >
-            Read More
-          </Link>
-        </div>
-      </div>
-      {/* End Post */}
+
       {/* Post */}
       <div className="blog-item box-shadow round p-4 p-md-5">
         {/* Post Title */}

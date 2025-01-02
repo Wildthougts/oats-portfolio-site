@@ -219,11 +219,11 @@ export const boldMultipageDark = [
 ];
 
 export const boldOnepage = [
-  { href: "#home", text: "Home", className: "active" },
-  { href: "#about", text: "About" },
-  { href: "#services", text: "Services" },
-  { href: "#blog", text: "Blog" },
-  { href: "#contact", text: "Contact" },
+  { href: "/", text: "Home", className: "active" },
+  { href: "/#about", text: "About" },
+  { href: "/#services", text: "Services" },
+  { href: "/blog", text: "Blog" },
+  { href: "/#contact", text: "Contact" },
 ];
 
 export const mainDemoOnepage = [

@@ -34,7 +34,7 @@ export const blogs1 = [
 export const blogs2 = [
   {
     id: 4,
-    imgSrc: "/assets/images/demo-modern/blog/1.jpg",
+    imgSrc: "/assets/images/Books1.png",
     title:
       "From Puzzles to Possibilities: How Chess Inspires My Passion for Art and Business",
     date: "January 3, 2025",
@@ -43,13 +43,13 @@ export const blogs2 = [
   },
   {
     id: 5,
-    imgSrc: "/assets/images/demo-modern/blog/2.jpg",
+    imgSrc: "/assets/images/Books2.png",
     title: "Chess as a Mirror: Life Lessons Learned One Move at a Time",
     date: "January 6, 2023",
   },
   {
     id: 6,
-    imgSrc: "/assets/images/demo-modern/blog/3.jpg",
+    imgSrc: "/assets/images/Books3.png",
     title:
       "Mastering the Endgame: How Chess Shapes Strategic Thinking in Business and Beyond",
     date: "November 29, 2025",

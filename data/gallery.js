@@ -1,20 +1,20 @@
 export const photoItems = [
   {
     id: 1,
-    href: "/assets/images/portfolio/full-project-1.jpg",
-    src: "/assets/images/portfolio/projects-1.jpg",
+    href: "/assets/images/Bimbo3.jpg",
+    src: "/assets/images/Bimbo3.jpg",
     alt: "Image Description",
   },
   {
     id: 2,
-    href: "/assets/images/portfolio/full-project-2.jpg",
-    src: "/assets/images/portfolio/projects-2.jpg",
+    href: "/assets/images/Bimbo4.png",
+    src: "/assets/images/Bimbo4.png",
     alt: "Image Description",
   },
   {
     id: 3,
-    href: "/assets/images/portfolio/full-project-3.jpg",
-    src: "/assets/images/portfolio/projects-3.jpg",
+    href: "/assets/images/Gallery4.png",
+    src: "/assets/images/Gallery4.png",
     alt: "Image Description",
   },
   {

@@ -9,6 +9,7 @@ import Contact from "./Contact";
 import Faq from "./Faq";
 import Link from "next/link";
 import Image from "next/image";
+import Gallery from "@/components/elements/Gallery";
 export default function Home2({ onePage = false, dark = false }) {
   return (
     <>
@@ -25,7 +26,7 @@ export default function Home2({ onePage = false, dark = false }) {
                 <Image
                   width={800}
                   height={1095}
-                  src="/assets/images/demo-bold/section-image-1.jpg"
+                  src="/assets/images/bimbo1.jpg"
                   className="w-100 wow scaleOutIn"
                   alt="Image Description"
                 />
@@ -180,24 +181,15 @@ export default function Home2({ onePage = false, dark = false }) {
               {/* End Accordion */}
             </div>
           </div>
-          {/* Divider */}
-          <div className="page-section">
-            <hr
-              className={`${
-                dark ? "white opacity-015" : "black"
-              } black mt-0 mb-0"`}
-            />
-          </div>
-          {/* End Divider */}
-          {/* Steps */}
-
-          <Services />
-          {/* End Steps */}
         </div>
       </section>
       <hr
         className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}
       />
+
+      <section className="page-section">
+        <Gallery />
+      </section>
       {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""

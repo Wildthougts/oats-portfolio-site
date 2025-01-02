@@ -6,24 +6,24 @@ export default function Experience() {
       {/* Marquee Text Line */}
       <div className="marquee marquee-style-2">
         <div className="marquee-track marquee-animation-1a">
-          <div>10 Years of experience</div>
-          <div aria-hidden="true">10 Years of experience</div>
-          <div aria-hidden="true">10 Years of experience</div>
-          <div aria-hidden="true">10 Years of experience</div>
-          <div aria-hidden="true">10 Years of experience</div>
-          <div aria-hidden="true">10 Years of experience</div>
-          <div aria-hidden="true">10 Years of experience</div>
-          <div aria-hidden="true">10 Years of experience</div>
-          <div aria-hidden="true">10 Years of experience</div>
-          <div aria-hidden="true">10 Years of experience</div>
-          <div aria-hidden="true">10 Years of experience</div>
-          <div aria-hidden="true">10 Years of experience</div>
-          <div aria-hidden="true">10 Years of experience</div>
-          <div aria-hidden="true">10 Years of experience</div>
-          <div aria-hidden="true">10 Years of experience</div>
-          <div aria-hidden="true">10 Years of experience</div>
-          <div aria-hidden="true">10 Years of experience</div>
-          <div aria-hidden="true">10 Years of experience</div>
+          <div>15+ Years of experience</div>
+          <div aria-hidden="true">15+ Years of experience</div>
+          <div aria-hidden="true">15+ Years of experience</div>
+          <div aria-hidden="true">15+ Years of experience</div>
+          <div aria-hidden="true">15+ Years of experience</div>
+          <div aria-hidden="true">15+ Years of experience</div>
+          <div aria-hidden="true">15+ Years of experience</div>
+          <div aria-hidden="true">15+ Years of experience</div>
+          <div aria-hidden="true">15+ Years of experience</div>
+          <div aria-hidden="true">15+ Years of experience</div>
+          <div aria-hidden="true">15+ Years of experience</div>
+          <div aria-hidden="true">15+ Years of experience</div>
+          <div aria-hidden="true">15+ Years of experience</div>
+          <div aria-hidden="true">15+ Years of experience</div>
+          <div aria-hidden="true">15+ Years of experience</div>
+          <div aria-hidden="true">15+ Years of experience</div>
+          <div aria-hidden="true">15+ Years of experience</div>
+          <div aria-hidden="true">15+ Years of experience</div>
         </div>
       </div>
       {/* End Marquee Text Line */}

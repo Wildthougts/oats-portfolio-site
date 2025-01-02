@@ -6,8 +6,12 @@ import { Item, Gallery } from "react-photoswipe-gallery";
 export default function GalleryComponent() {
   return (
     <div className="container relative">
-      <div className="text-center mb-60 mb-sm-40">
-        <h2 className="section-title-small">Lightbox Gallery</h2>
+      <div className="mb-60 mb-sm-40">
+        <h2 className="section-title-medium font-alt text-outline-cont mt-20 mb-50 mb-md-30">
+          <span className="text-outline-2">Gallery</span>
+          <span className="text-outline-1">Gallery</span>
+          <span className="text-outline">Gallery</span>
+        </h2>
       </div>
       {/* Photo Grid */}
       <Gallery>
