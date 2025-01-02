@@ -126,7 +126,7 @@ export default function Hero2({ dark }) {
                   data-offset={60}
                 >
                   <Image
-                    src="/assets/images/bimbohero.jpg"
+                    src="/assets/images/Bimbohero.jpg"
                     width={500}
                     height={800}
                     alt="Image description"
