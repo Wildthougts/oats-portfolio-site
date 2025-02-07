@@ -1,8 +1,8 @@
 import React from "react";
 import Experience from "./Experience";
 import Awards from "./Awards";
-import Services from "./Services";
-import Portfolio from "./Portfolio";
+import { client } from "@/lib/sanity.client";
+import { postsQuery } from "@/lib/queries";
 import Testimonials from "./Testimonials";
 import Blog from "./Blog";
 import Contact from "./Contact";
@@ -10,7 +10,11 @@ import Faq from "./Faq";
 import Link from "next/link";
 import Image from "next/image";
 import Gallery from "@/components/elements/Gallery";
-export default function Home2({ onePage = false, dark = false }) {
+
+export default async function Home2({ onePage = false, dark = false }) {
+  // Fetch posts for the blog section
+  const posts = await client.fetch(postsQuery);
+  const limitedPosts = posts.slice(0, 3); // Limit to 3 posts for homepage
   return (
     <>
       <section
@@ -215,7 +219,7 @@ export default function Home2({ onePage = false, dark = false }) {
         } `}
         id="blog"
       >
-        <Blog />
+        <Blog posts={limitedPosts} />
       </section>
       <hr
         className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}

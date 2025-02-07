@@ -1,8 +1,9 @@
-import { blogs2 } from "@/data/blogs";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-export default function Blog() {
+import { urlForImage } from "@/lib/image";
+
+export default function Blog({ posts = [] }) {
   return (
     <div className="container">
       <div className="row">
@@ -37,37 +38,39 @@ export default function Blog() {
       </div>
       {/* Blog Grid */}
       <div className="row gy-4">
-        {/* Post Item */}
-        {blogs2.map((post, i) => (
+        {posts.map((post, i) => (
           <div
-            key={post.id}
+            key={post._id}
             className={`post-prev-2 col-md-6 col-lg-4 
               ${i == 0 ? "mt-140 mt-md-0" : ""}
               ${i == 2 ? "mt-n140 mt-md-0" : ""}
             `}
-            data-rellax-y=""
-            data-rellax-speed={post.rellaxSpeed || 0}
-            data-rellax-percentage={post.rellaxPercentage || 0}
           >
             <div className="post-prev-2-img">
-              <Link href={`/bold-blog-single/${post.id}`}>
-                <Image
-                  width={700}
-                  height={479}
-                  src={post.imgSrc}
-                  alt="Image Description"
-                />
+              <Link href={`/blog/${post.slug.current}`}>
+                {post.mainImage && (
+                  <Image
+                    width={700}
+                    height={479}
+                    src={urlForImage(post.mainImage)}
+                    alt={post.title || "Blog post image"}
+                  />
+                )}
               </Link>
             </div>
             <h3 className="post-prev-2-title">
-              <Link href={`/bold-blog-single/${post.id}`}>{post.title}</Link>
+              <Link href={`/blog/${post.slug.current}`}>{post.title}</Link>
             </h3>
-            <div className="post-prev-2-info">{post.date}</div>
+            <div className="post-prev-2-info">
+              {new Date(post.publishedAt).toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </div>
           </div>
         ))}
-        {/* End Post Item */}
       </div>
-      {/* End Blog Grid */}
     </div>
   );
 }
