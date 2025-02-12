@@ -3,25 +3,31 @@ export const faqs = [
     id: 1,
     question: "01. Chess Coaching",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.",
+      "Elevate your gameplay with one-on-one sessions tailored to your skill level. I combines technical mastery with adaptive teaching methods to help you dominate openings, refine midgame tactics, and master endgame strategies. Ideal for players from 0 to 2000 FIDE elo",
   },
   {
     id: 2,
-    question: "02. Project Management",
+    question: "02. Tournament Preperation ",
     answer:
-      "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet dignissim pellentesque felis.",
+      "Compete with confidence. Abimbola crafts bespoke training regimens focusing on time management, psychological resilience, and opponent-specific strategies. Includes mock tournaments and post-game debriefs to ensure peak performance.",
   },
   {
     id: 3,
-    question: "03. Book Club",
+    question: "03. Online Training Program",
     answer:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.",
+      "Learn anytime, anywhere. Abimbola’s virtual coaching includes live video sessions, recorded tutorials, and interactive exercises—all designed to fit your schedule while maintaining the rigor of in-person training.",
   },
   {
     id: 4,
-    question: "04. The Process",
+    question: "04. Youth Chess development",
     answer:
-      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna.",
+      "Inspire young minds with programs that make chess fun and educational. Focused on creativity, problem-solving, and confidence-building, these sessions lay the foundation for future champions.",
+  },
+  {
+    id: 4,
+    question: "04. Game Analysis and Feedback",
+    answer:
+      "Unlock hidden potential with expert analysis of your matches. Using cutting-edge tools and decades of experience, Abimbola dissects your gameplay, identifies weaknesses, and provides actionable steps to transform your strategy.",
   },
 ];
 

@@ -51,7 +51,7 @@ export default function Testimonials() {
                             className="rounded-circle"
                             width={44}
                             height={44}
-                            src="/assets/images/ts1-user.jpg"
+                            src="/assets/images/testi3.jpg"
                             alt="Image description is here"
                           />
                         </div>

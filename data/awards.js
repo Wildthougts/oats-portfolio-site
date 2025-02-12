@@ -16,8 +16,8 @@ export const awards = [
   {
     id: 3,
     month: "April, 2023",
-    title: "The Best ",
-    description: "National Championship",
+    title: "Blitz Champion",
+    description: "Nigerian National Sports Festival",
     imgSrc: "/assets/images/award1.png",
   },
 ];
