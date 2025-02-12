@@ -5,6 +5,7 @@ import { PortableText } from "@portabletext/react";
 import Footer2 from "@/components/footers/Footer2";
 import { boldOnepage } from "@/data/menu";
 import dynamic from "next/dynamic";
+import { getArticleBySlug } from "@/lib/getArticleBySlug";
 
 const ParallaxContainer = dynamic(
   () => import("@/components/common/ParallaxContainer"),
@@ -15,10 +16,37 @@ import AnimatedText from "@/components/common/AnimatedText";
 import Form9 from "@/components/blog/commentForm/Form9";
 import Header2 from "@/components/headers/Header2";
 
-export const metadata = {
-  title: "Abimbola's News & Updates ",
-  description: "Stay updated with my adventures",
-};
+export async function generateMetadata({ params }) {
+  const metadata = await getArticleBySlug(params.slug);
+
+  return {
+    title: metadata.title,
+    description: metadata.description,
+    openGraph: {
+      title: metadata.title,
+      description: metadata.description,
+      type: "article",
+      publishedTime: metadata.publishedAt,
+      authors: [metadata.author],
+      images: metadata.ogImage
+        ? [
+            {
+              url: urlForImage(metadata.ogImage),
+              width: 1200,
+              height: 630,
+              alt: metadata.title,
+            },
+          ]
+        : [],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: metadata.title,
+      description: metadata.description,
+      images: metadata.ogImage ? [urlForImage(metadata.ogImage)] : [],
+    },
+  };
+}
 
 // Add no-store fetch option
 export const revalidate = 0;
