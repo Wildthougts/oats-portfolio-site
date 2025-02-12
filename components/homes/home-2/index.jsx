@@ -15,11 +15,25 @@ import Gallery from "@/components/elements/Gallery";
 
 export default function Home2({ onePage = false, dark = false }) {
   const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     async function fetchPosts() {
-      const fetchedPosts = await client.fetch(postsQuery);
-      setPosts(fetchedPosts.slice(0, 3)); // Limit to 3 posts for homepage
+      try {
+        setLoading(true);
+        const fetchedPosts = await client.fetch(
+          postsQuery,
+          {},
+          { cache: "no-store" }
+        );
+        setPosts(fetchedPosts.slice(0, 3));
+      } catch (err) {
+        console.error("Error fetching posts:", err);
+        setError(err);
+      } finally {
+        setLoading(false);
+      }
     }
     fetchPosts();
   }, []);
@@ -228,7 +242,17 @@ export default function Home2({ onePage = false, dark = false }) {
         } `}
         id="blog"
       >
-        <Blog posts={posts} />
+        {error ? (
+          <div className="container">
+            <p>Error loading blog posts. Please try again later.</p>
+          </div>
+        ) : loading ? (
+          <div className="container">
+            <p>Loading posts...</p>
+          </div>
+        ) : (
+          <Blog posts={posts} />
+        )}
       </section>
       <hr
         className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}

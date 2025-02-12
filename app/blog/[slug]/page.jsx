@@ -20,8 +20,19 @@ export const metadata = {
   description: "Stay updated with my adventures",
 };
 
+// Add no-store fetch option
+export const revalidate = 0;
+
 export default async function MainBlogSinglePageFullWidth({ params }) {
-  const post = await client.fetch(postQuery, { slug: params.slug });
+  const post = await client.fetch(
+    postQuery,
+    {
+      slug: params.slug,
+    },
+    {
+      cache: "no-store",
+    }
+  );
 
   if (!post) {
     return <div>Post not found</div>;
