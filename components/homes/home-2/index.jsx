@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Experience from "./Experience";
 import Awards from "./Awards";
-import { client } from "@/lib/sanity.client";
+import { client } from "@/lib/sanity.client.ts";
 import { postsQuery } from "@/lib/queries";
 import Testimonials from "./Testimonials";
 import Blog from "./Blog";
