@@ -25,12 +25,30 @@ export default function Home2({ onePage = false, dark = false }) {
         const fetchedPosts = await client.fetch(
           postsQuery,
           {},
-          { cache: "no-store" }
+          {
+            next: { revalidate: 60 }, // Match the revalidation time from blog page
+            perspective: "published",
+          }
         );
-        setPosts(fetchedPosts.slice(0, 3));
+
+        if (!fetchedPosts || !Array.isArray(fetchedPosts)) {
+          throw new Error("Invalid posts data");
+        }
+
+        // Transform posts to match the blog page format
+        const formattedPosts = fetchedPosts.map((post) => ({
+          _id: post._id,
+          title: post.title,
+          date: post.publishedAt,
+          publishedAt: post.publishedAt,
+          slug: post.slug,
+          mainImage: post.mainImage,
+        }));
+
+        setPosts(formattedPosts.slice(0, 3));
       } catch (err) {
         console.error("Error fetching posts:", err);
-        setError(err);
+        setError(err.message || "Failed to fetch posts");
       } finally {
         setLoading(false);
       }
@@ -244,7 +262,8 @@ export default function Home2({ onePage = false, dark = false }) {
       >
         {error ? (
           <div className="container">
-            <p>Error loading blog posts. Please try again later.</p>
+            <p>Error loading blog posts: {error}</p>
+            <p>Please check the console for more details.</p>
           </div>
         ) : loading ? (
           <div className="container">
