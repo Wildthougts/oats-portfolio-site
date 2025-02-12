@@ -224,14 +224,68 @@ export default async function Home2({ onePage = false, dark = false }) {
       <hr
         className={`${dark ? "white opacity-015" : "black"} black mt-0 mb-0"`}
       />
-      <section
+      <section className="full-wrapper" id="contact">
+        <div className="page-section bg-border-gradient pt-0 pb-0 scroll-nav-invisible z-index-1">
+          <div className="page-section container position-relative scroll-nav-invisible">
+            {/* Decoration Image */}
+            <div
+              className="decoration-image-1"
+              data-rellax-y=""
+              data-rellax-speed="0.5"
+              data-rellax-percentage="0.5"
+            >
+              <Image
+                src="/assets/images/cta1.jpg"
+                alt="Image Description"
+                width={336}
+                height={406}
+              />
+            </div>
+            {/* End Decoration Image */}
+            {/* Decoration Image */}
+            <div
+              className="decoration-image-2"
+              data-rellax-y=""
+              data-rellax-speed="-0.5"
+              data-rellax-percentage="0.4"
+            >
+              <Image
+                src="/assets/images/cta2.jpg"
+                alt="Image Description"
+                width={350}
+                height={256}
+              />
+            </div>
+            {/* End Decoration Image */}
+            <div className="row text-center">
+              <div className="col-md-8 offset-md-2 ">
+                <p className="section-text mb-60 mb-md-40 mb-sm-30">
+                  Ready to elevate your chess game? Let’s work together to
+                  unlock your full potential—explore my services and start your
+                  journey today
+                </p>
+                <div className="local-scroll">
+                  <Link
+                    href={`https://wa.me/18623737399`}
+                    className="btn btn-mod btn-large btn-round btn-hover-anim"
+                    target="_blank"
+                  >
+                    <span>Let's talk </span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <section
         className={`page-section  scrollSpysection  ${
           dark ? "bg-dark-1 light-content" : ""
         } `}
         id="contact"
       >
         <Contact />
-      </section>
+      </section> */}
     </>
   );
 }

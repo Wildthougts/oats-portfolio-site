@@ -13,19 +13,19 @@ export const footerLinks2 = [
 
 export const socialLinks = [
   {
-    href: "#",
+    href: "https://www.instagram.com/tigran_spinoza/",
     text: "Instagram",
   },
   {
-    href: "#",
-    text: "Facebook",
+    href: "https://x.com/TIGRAN_SPINOZA",
+    text: "x",
   },
   {
     href: "#",
     text: "YouTube",
   },
   {
-    href: "#",
+    href: "https://www.linkedin.com/in/abimbola-osunfuyi",
     text: "LinkedIn",
   },
 ];

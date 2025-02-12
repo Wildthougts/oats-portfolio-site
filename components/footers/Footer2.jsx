@@ -58,10 +58,6 @@ export default function Footer2() {
       {/* Footer Text */}
       <div className="footer-text text-center mt-n10 pb-50">
         Made with love by <a href="http://instagram.com/destinyomaye">Deon</a>.
-        <div className="small">
-          Read <a href="#">Terms &amp; Conditions</a> and{" "}
-          <a href="#">Privacy Policy</a>.
-        </div>
       </div>
       {/* End Footer Text */}
     </div>

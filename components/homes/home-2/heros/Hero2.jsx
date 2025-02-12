@@ -96,11 +96,12 @@ export default function Hero2({ dark }) {
                 data-wow-offset={0}
               >
                 <a
-                  href="#portfolio"
+                  href={`https://wa.me/18623737399`}
                   className={`btn btn-mod ${
                     dark ? "btn-w" : ""
                   }  btn-medium btn-circle`}
                   data-btn-animate="y"
+                  target="_blank"
                 >
                   <span className="btn-animate-y">
                     <span className="btn-animate-y-1">Let's talk</span>
