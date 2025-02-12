@@ -19,7 +19,7 @@ export default function Blog({ posts = [] }) {
           </p>
           <div className="local-scroll">
             <Link
-              href={`/bold-blog`}
+              href={`/blog`}
               className="link-hover-anim underline align-middle"
               data-link-animate="y"
             >

@@ -202,7 +202,7 @@ export default function Home2({ onePage = false, dark = false }) {
                 ) : (
                   <>
                     <Link
-                      href={`/bold-contact${dark ? "-dark" : ""}`}
+                      href={`/contact${dark ? "-dark" : ""}`}
                       className="link-hover-anim underline align-middle"
                       data-link-animate="y"
                     >
