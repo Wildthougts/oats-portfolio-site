@@ -16,6 +16,20 @@ import AnimatedText from "@/components/common/AnimatedText";
 import Form9 from "@/components/blog/commentForm/Form9";
 import Header2 from "@/components/headers/Header2";
 
+const SanityImage = ({ value }) => {
+  return (
+    <div className="blog-media mb-40 mb-xs-30">
+      <img src={urlForImage(value)} alt={value.alt || " "} className="w-full" />
+    </div>
+  );
+};
+
+const components = {
+  types: {
+    image: SanityImage,
+  },
+};
+
 export async function generateMetadata({ params }) {
   const metadata = await getArticleBySlug(params.slug);
 
@@ -153,7 +167,10 @@ export default async function MainBlogSinglePageFullWidth({ params }) {
                           </div>
                         )}
                         <div className="blog-content">
-                          <PortableText value={post.body} />
+                          <PortableText
+                            value={post.body}
+                            components={components}
+                          />
                         </div>
                       </div>
                     </div>
